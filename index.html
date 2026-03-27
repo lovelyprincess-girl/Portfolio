@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucrèce Moustapha — Cybersécurité</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Fond d'écran fixe -->
+<div class="bg-fixed"></div>
+
+<div class="site">
+
+  <!-- ═══ HEADER ═══ -->
+  <header>
+    <div class="logo">LM<span> / Portfolio</span></div>
+    <nav id="main-nav">
+      <a href="#projets"    onclick="closeMenu()">Projets</a>
+      <a href="#competences" onclick="closeMenu()">Compétences</a>
+      <a href="#formation"  onclick="closeMenu()">Formation</a>
+      <a href="#experience" onclick="closeMenu()">Expériences</a>
+      <a href="#contact"    onclick="closeMenu()">Contact</a>
+    </nav>
+    <div class="burger" id="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero">
+    <div class="hero-tag">Disponible pour alternance 2026</div>
+    <h1>Lucrèce<br><em>Moustapha</em></h1>
+    <p class="hero-sub">
+      Étudiante Bac+2 Réseaux &amp; Systèmes — orientée vers la cybersécurité.
+      Basée à Créteil, Île-de-France.
+    </p>
+    <div class="hero-cta">
+  <a href="CV_ALTERNANCE_CYBERSECURITE.pdf" download class="btn-primary">Télécharger CV</a>
+  <a href="#contact" class="btn-ghost">Me contacter</a>
+</div>
+</section>
+
+  <!-- ═══ PROJETS ═══ -->
+  <section id="projets" class="fade">
+    <div class="section-label">Projets</div>
+    <h2 class="section-title">Ce que j'ai construit</h2>
+    <div class="projects-grid">
+
+      <div class="proj-card" onclick="toggleProj(this)">
+        <div class="proj-num">01</div>
+        <h3>Déploiement de postes et serveurs</h3>
+        <p>Installation et automatisation de postes Windows 11, reconditionnement et optimisation d'un parc informatique.</p>
+        <div class="proj-details">
+          <a href="https://github.com/tonprofil/deploiement-postes" target="_blank" class="proj-link">Voir sur GitHub</a>
+        </div>
+      </div>
+
+      <div class="proj-card" onclick="toggleProj(this)">
+        <div class="proj-num">02</div>
+        <h3>Sécurisation d'un réseau local</h3>
+        <p>Déploiement filaire et sans-fil, configuration Active Directory, renforcement de la sécurité.</p>
+        <div class="proj-details">
+          <p style="font-size:13px;color:var(--muted);line-height:1.7">
+            Configuration AD, gestion des politiques de groupe, audit de sécurité et optimisation des performances réseau.
+          </p>
+          <a href="https://github.com/tonprofil/securisation-reseau" target="_blank" class="proj-link">Voir sur GitHub</a>
+        </div>
+      </div>
+      <div class="proj-card" onclick="toggleProj(this)">
+  <div class="proj-num">03</div>
+  <h3>Site de recommandation d’écoles</h3>
+  <p>
+    Plateforme intelligente recommandant des écoles selon la ville et le domaine.
+    Inclut une expérience ludique avec un mini-jeu dès la première utilisation.
+  </p>
+
+  <div class="proj-details">
+    <p style="font-size:13px;color:var(--muted);line-height:1.7">
+      Développement d’un site dynamique permettant aux utilisateurs de trouver des écoles adaptées à leurs critères 
+      (localisation, domaine d’étude). Intégration d’un système interactif avec un mini-jeu pour engager l’utilisateur 
+      dès son arrivée. Technologies utilisées : PHP, CSS et gestion de données.
+    </p>
+
+    <a href="https://github.com/lovelyprincess-girl" target="_blank" class="proj-link">
+      Voir sur GitHub
+    </a>
+  </div>
+</div>
+
+      <div class="proj-card" onclick="toggleProj(this)">
+        <div class="proj-num">04</div>
+        <h3>Site Pâtisserie (projet personnel)</h3>
+        <p>Site e-commerce avec panier dynamique — boutique, ajout/retrait de produits, panier, formulaire de commande.</p>
+        <div class="proj-details">
+          <p style="font-size:13px;color:var(--muted);line-height:1.7">
+            Interface simple et intuitive simulant un parcours utilisateur jusqu'à la commande. Développé avec WordPress.
+          </p>
+          <a href="https://github.com/lovelyprincess-girl" target="_blank" class="proj-link">Voir sur GitHub</a>
+        </div>
+      </div>
+
+      <div class="proj-card" onclick="toggleProj(this)">
+        <div class="proj-num">05</div>
+        <h3>ECE Ciné Subtitution de stage</h3>
+        <p>Site dynamique de gestion de contenus cinéma, développé en binôme avec base de données.</p>
+        <div class="proj-details">
+          <p style="font-size:13px;color:var(--muted);line-height:1.7">
+            Pages PHP dynamiques, CRUD complet, gestion des utilisateurs (inscription/connexion), intégration MySQL, avec maquettes figma.
+          </p>
+          <a href="https://github.com/tonprofil/ece-cine" target="_blank" class="proj-link">Voir sur GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ COMPÉTENCES ═══ -->
+  <section id="competences" class="fade">
+    <div class="section-label">Compétences</div>
+    <h2 class="section-title">Outils et Langages</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card" onclick="toggleActive(this)">
+        <h3>Langages</h3>
+        <p>Python (en apprentissage), SQL, HTML / CSS, PHP, JavaScript</p>
+      </div>
+
+      <div class="skill-card" onclick="toggleActive(this)">
+        <h3>Développement</h3>
+        <p>Git / GitHub, VS Code, Bootstrap, MySQL, WordPress, Figma, Canva</p>
+      </div>
+
+      <div class="skill-card" onclick="toggleActive(this)">
+        <h3>Systèmes &amp; Réseaux</h3>
+        <p>Linux, Windows Server, PowerShell, Active Directory, réseaux locaux filaires et sans-fil</p>
+      </div>
+
+      <div class="skill-card" onclick="toggleActive(this)">
+        <h3>Sécurité</h3>
+        <p>Sécurité réseau, GPO, durcissement de systèmes, gestion des droits et accès</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ FORMATION ═══ -->
+  <section id="formation" class="fade">
+    <div class="section-label">Formation</div>
+    <h2 class="section-title">Parcours académique</h2>
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-year">2023–2024</div>
+        <div class="tl-content">
+          <h3>Bac Scientifique</h3>
+          <p>Lycée d'État Charles Méfane, Gabon — Maths, Physique, Biologie</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">2024–2025</div>
+        <div class="tl-content">
+          <h3>Bachelor 1</h3>
+          <p>École Centrale d'Électronique, Paris — Développement Web, IA, Cybersécurité, Gestion Réseaux, Science des données, C</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">En cours</div>
+        <div class="tl-content">
+          <h3>Bac+2 Réseaux &amp; Systèmes</h3>
+          <p>Configuration de postes, administration réseau, sécurité et support utilisateurs</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">2026–2027</div>
+        <div class="tl-content">
+          <h3>Bac+3 Cybersécurité — Prévue</h3>
+          <p>Sécurité informatique, cryptographie, gestion des risques, défense contre les cybermenaces</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ EXPÉRIENCES ═══ -->
+  <section id="experience" class="fade">
+    <div class="section-label">Expériences</div>
+    <h2 class="section-title">Terrain et Pratique</h2>
+    <div class="exp-grid">
+
+      <div class="exp-card" onclick="toggleActive(this)">
+        <div class="company">CECADO — 2022/2023</div>
+        <h3>Vendeur en rayon</h3>
+        <p>Gestion des stocks, réassort, mise en rayon, accueil client, caisse.</p>
+      </div>
+
+      <div class="exp-card" onclick="toggleActive(this)">
+  <div class="company">Bénévolat — 2023/2024</div>
+  <h3>Accompagnement d’enfants orphelins</h3>
+  <p>
+    Encadrement d’enfants, aide aux activités éducatives et ludiques. 
+    Développement de la communication, de l’écoute et du sens des responsabilités.
+  </p>
+
+</div>
+      <div class="exp-card" onclick="toggleActive(this)">
+        <div class="company">Stage prévu — Fin Bac+2</div>
+        <h3>Stage informatique</h3>
+        <p>Stage de 3 mois prévu pour la mise en pratique des compétences réseau et systèmes.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact" class="fade">
+    <div class="section-label">Contact</div>
+    <h2 class="section-title">Prendre contact</h2>
+    <div class="contact-inner">
+      <div class="contact-info">
+        <div class="contact-row"><strong>Email</strong> moustaphantoufath@gmail.com</div>
+        <div class="contact-row"><strong>Téléphone</strong> 06 05 87 66 76</div>
+        <div class="contact-row"><strong>Localisation</strong> Créteil, Île-de-France</div>
+        <div class="contact-row"><strong>GitHub</strong> <a href="https://github.com/lovelyprincess-girl" target="_blank">https://github.com/lovelyprincess-girl</a></div>
+        <div class="contact-row"><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/lucrece-moustapha-54b7503ba/" target="_blank">https://www.linkedin.com/in/lucrece-moustapha-54b7503ba/</a></div>
+      </div>
+    </div>
+</section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>© 2026 Lucrèce Moustapha — Tous droits réservés</footer>
+
+</div><!-- /site -->
+
+<!-- ═══ JAVASCRIPT ═══ -->
+<script>
+  /* Navigation mobile */
+  function toggleMenu() {
+    document.getElementById('main-nav').classList.toggle('open');
+  }
+
+  function closeMenu() {
+    document.getElementById('main-nav').classList.remove('open');
+  }
+
+  /* Accordéon projets */
+  function toggleProj(card) {
+    const isOpen = card.classList.contains('open');
+    document.querySelectorAll('.proj-card.open').forEach(c => c.classList.remove('open'));
+    if (!isOpen) card.classList.add('open');
+  }
+
+  /* Toggle actif compétences / expériences */
+  function toggleActive(card) {
+    const wasActive = card.classList.contains('active');
+    const siblings = card.closest('div').querySelectorAll('.skill-card, .exp-card');
+    siblings.forEach(c => c.classList.remove('active'));
+    if (!wasActive) card.classList.add('active');
+  }
+
+  /* Fade in au scroll */
+  const fades = document.querySelectorAll('.fade');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('show');
+    });
+  }, { threshold: 0.1 });
+
+  fades.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
